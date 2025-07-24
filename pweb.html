@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lag="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-widht, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Trabalho com formulário </title>
+</head>
+<body>
+    <!--post=envia dados no corpo de requisição, get=envia dados via URL como parâmetros-->
+    <form action="#" method="post">
+        <p>Agendamento de visita</p>
+        <label for="nome">Nome:</label>
+        <br>
+        <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Informe aqui o seu nome"
+        size="30"/>
+        <!--required=campo obrigatório, disabled=não pode preencher o campo-->
+
+        <br><br>
+        <label for="email">Email:</label>
+        <br>
+        <input
+        type="email"
+        name="email"
+        id="email1"
+        placeholder="Informe aqui o seu email"
+        size="30"/>
+
+        <br><br>
+        <label for="data_visita">Data de visita:</label>
+        <br>
+        <input
+        type="date"
+        name="data_visita"
+        id="data_visita"/>
+
+        <br><br>
+        <label for="hora_visita">Data e hora de visita:</label>
+        <br>
+        <input
+        type="datetime-local"
+        name="data_hora_visita"
+        id="data_hora_visita"/>
+
+        <br><br>
+        <label for="telefone">Telefone:</label>
+        <br>
+        <input
+        type="tel"
+        name="telefone"
+        id="telefone"
+        placeholder="(82) 99999-9999"/>
+
+        <br><br>
+        <label for="tempo">Tempo de visita:</label>
+        <br>
+        <input
+        type="number"
+        name="tempo"
+        id="tempo"
+        min="1"
+        max="10"
+        step="2"/>
+
+        <br><br>
+        <label for="atracao">Atração:</label>
+        <br>
+        <select name="atracao" id="atracao">
+            <option value="praia_do_frances">Praia do Francês</option>
+            <option value="praia_do_gunga">Praia do Gunga</option>
+            <option value="praia_do_pontal" selected >Praia do Pontal</option>
+            <option value="praia_do_lagoa_do_mundo">Praia do Lagoa do Mundo</option>
+            <option value="praia_da_barra">Praia da Barra</option>
+        </select>
+
+        <br><br>
+        <fieldset>
+            <legend>Escolha seu transporte:</legend>
+            <input type="radio" name="transporte" id="carro" value="carro">
+            <label for="carro">Carro</label>
+            <input type="radio" name="transporte" id="onibus" value="onibus">
+            <label for="onibus">Ônibus</label>
+            <input type="radio" name="transporte" id="van" value="van">
+            <label for="van">Van</label>
+        </fieldset>
+
+        <br><br>
+        <label for="observacao">Observação:</label>
+        <br>
+        <textarea
+        name="observacao"
+        id="observacao"
+        cols="30"
+        rows="10"
+        placeholder="Observação"
+        ></textarea>
+
+        <br><br>
+        <input type="checkbox" name="termos" id="termos">
+        <label for="termos">Aceito os termos de uso:</label>
+    </form>
+</body>
+</html>

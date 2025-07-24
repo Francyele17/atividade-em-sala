@@ -1,0 +1,27 @@
+.container{
+    background-color: lightblue;
+    display:flex;
+    /*flex-direction: row;
+    flex-wrap: wrap-reverse;*/
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    gap: 10px;
+    height: 400px;
+}
+
+.box{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    box-shadow: 2px, 2px, 5px gray;
+}
+
+.box-blue{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    box-shadow: 2px, 2px, 5px gray;
+    order: -1;
+}

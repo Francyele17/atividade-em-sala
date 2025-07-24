@@ -1,0 +1,14 @@
+p{
+    color: #E6E6FA
+}
+#paragrafo{
+    color:blue;
+    font-size: 20px;
+}
+
+.paragrafo {
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+
+}

@@ -1,0 +1,55 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:aliceblue;
+    color: #0b2c2c;
+
+}
+p {
+    font-weight: 700
+}
+
+a{
+    font-size: 12px;
+    text-decoration: nome;
+    color: rgb(8, 150, 168);
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+input:not([type="checkbox"]):not([type="radio"]){
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid cadetblue;
+}
+
+button {
+    background-color: aliceblue;
+    border: 1px solid rgb(8, 150, 168);
+    border-radius: 5px;
+    padding: 2px;
+
+}
+
+.container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.button-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
